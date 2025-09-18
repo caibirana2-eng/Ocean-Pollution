@@ -1,0 +1,181 @@
+
+
+/*Allows use of the font 'Comfortaa'*/
+@font-face {
+    font-family:Comfortaa;
+    src:url(COMFORTAAAAA/Comfortaa-Regular.ttf);
+}
+
+/*Qualities consistent among every section*/
+body{
+    background-color:#1c1f61;
+    color:aliceblue;
+    text-align:center;
+    font-family:Comfortaa;
+    margin:0;
+    padding:0;
+}
+
+/*Qualities of all images*/
+img{
+    width:100%;
+    height:100%;
+    filter:brightness(80%);
+}
+
+/*Qualities of links*/
+a{
+    color:aliceblue;
+    font-size:1em;
+}
+
+
+/*Qualities of main heading*/
+h1{
+    background-color:#1d1d5f;
+    width:100%;
+    text-align:center;
+    font-size:60px;
+    margin-bottom:0;
+    margin-top:-10px;
+    padding-bottom:25px;
+    border:1px solid aliceblue;
+}
+
+
+/*2 by 1 grid seperating the footer source links and icon. Includes the qualities of the footer links, and the qualities of the footer section's background and border*/
+footer{
+    font-size:1em;
+    background-color:#1d1d5f;
+    border:1px solid aliceblue;
+    text-align:left;
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    grid-template-rows:1fr;
+}
+
+
+/*Qualities resrved for non-hero images that do not have headers*/
+.headerlessimg{
+    border:1px solid aliceblue;
+    border-radius:20px;
+}
+
+
+/*Qualities of the icon on the right of the footer*/
+.footericon{
+    border-radius:50%;
+    width:25%;
+    height:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    margin-left:55%;
+}
+
+/*Qualities of main informational texts*/
+.fillertext{
+    border:1px solid aliceblue;
+    font-size:1.5em;
+    max-width:100%;
+    height:100%;
+    background-color:#23265f;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:20px;
+}
+
+/*5 by 1 grid separating each link on the navigation bar and placing them inside one visible box. Includes qualities of the navigation bar's background and border*/
+.navbar{
+    background-color:#1f2157;
+    border:1px solid aliceblue;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows:1fr;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+/*Qualities of hero image*/
+.hero{
+    width:100%;
+    height:40em;
+    background-size:cover;
+    background-position:center;
+    margin-bottom:-3px;
+    border:1px solid aliceblue;
+    border-radius:0;
+}
+
+
+/*Gives all images headers, that have been used to present extra information in the form of facts and statistics. Uses a 1 by 2 grid layout */
+
+.imagewithheader{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 9fr;
+    overflow:hidden;
+    border:1px solid aliceblue;
+    border-radius:20px;
+}
+
+.imageheader{
+    border:1px solid aliceblue;
+    font-size:1.2em;
+    padding-top:20px;
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:#23265f;
+    padding-bottom:10px;
+}
+
+
+
+/*List of grid arrangements that help with structuring the page layouts, name based off what the affected section consists of*/
+
+.index3images3text{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+}
+
+.plastic3images3text{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:5fr 3fr;
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+}
+
+.sediment1image1text{
+    display:grid;
+    grid-template-columns:2fr 3fr;
+    grid-template-rows:1fr;
+    grid-column-gap:20px;
+}
+
+.sediment3images{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:1fr;
+    grid-column-gap:20px;
+}
+
+.urban4images2text{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+}
+
+.help4images4text{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 2fr 1fr);
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+}
